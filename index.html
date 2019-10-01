@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						# Adapters & Decorators
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Summary
+
+						- Questions first !
+						- The Adapter pattern ?
+						- The Decorator pattern ?
+						- A quick conclusion
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Questions first !
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### What is SOLID ?
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### What is inheritance ?
+
+							- When do we use it ? <!-- .element: class="fragment" -->
+							- When should do we use it ? <!-- .element: class="fragment" -->
+							- The square problem <!-- .element: class="fragment" -->
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### What is composition ?
+
+							- What are their purpose ? <!-- .element: class="fragment" -->
+							- To which kind of design pattern do they belong ? <!-- .element: class="fragment" -->
+							- Inheritance or Composition ? <!-- .element: class="fragment" -->
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Have you heard about Adapter / Decorator ?
+
+							- What are their purpose ? <!-- .element: class="fragment" -->
+							- To which kind of design pattern do they belong ? <!-- .element: class="fragment" -->
+							- Inheritance or Composition ? <!-- .element: class="fragment" -->
+						</textarea>
+					</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## The Adapter pattern ?
+
+						> Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## The Decorator pattern ?
+
+						> Decorator is a structural design pattern that lets you attach new behaviors
+						> to objects by placing these objects inside special wrapper objects that contain the behaviors.
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## A quick conclusion
+
+						Bla bla bla ...
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
