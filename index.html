@@ -1,111 +1,117 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+    <title>reveal.js</title>
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 </head>
 <body>
 <div class="reveal">
-	<div class="slides">
-		<section data-markdown>
+    <div class="slides">
+        <section data-markdown>
 			<textarea data-template>
 				# Design Patterns - Adapter et Decorator
 			</textarea>
-		</section>
-		<section data-markdown>
+        </section>
+        <section data-markdown>
 			<textarea data-template>
-				## Sommaire
+				### Sommaire
 
-                - Des questions !
-                - Le patron Adapter
-                - Le patron Decorator
-                - Une petite conclusion ...
+				Des questions !
+
+				Adapter
+
+				Decorator
+
+				Conclusion
+
+
 			</textarea>
-		</section>
-		<section>
-			<section data-markdown>
+        </section>
+        <section>
+            <section data-markdown>
 				<textarea data-template>
 					## Des questions !
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
-					### Qu'est-ce que SOLID ?
+					### SOLID ?
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
-					### Qu'est-ce que l'héritage ?
+					### L'héritage ?
 
-                    - Quand l'utilisez-vous ? <!-- .element: class="fragment" -->
-                    - Quand devrait-on l'utiliser ? <!-- .element: class="fragment" -->
-                    - Quand devrait-on NE PAS l'utiliser ? <!-- .element: class="fragment" -->
+					- Quand l'utilisez-vous ? <!-- .element: class="fragment" -->
+					- Quand devrait-on l'utiliser ? <!-- .element: class="fragment" -->
+					- Quand devrait-on NE PAS l'utiliser ? <!-- .element: class="fragment" -->
+
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					### Qu'est-ce que la composition ?
 
 					- blabla <!-- .element: class="fragment" -->
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					### Connaissez-vous Adapter & Decorator ?
 
-                    - Quels problèmes viennent-ils solutionner ? <!-- .element: class="fragment" -->
-                    - A quel type de patron de conception appartiennent ils ? <!-- .element: class="fragment" -->
-                    - Héritage ou composition ? <!-- .element: class="fragment" -->
+					- Quels problèmes viennent-ils solutionner ? <!-- .element: class="fragment" -->
+					- A quel type de patron de conception appartiennent ils ? <!-- .element: class="fragment" -->
+					- Héritage ou composition ? <!-- .element: class="fragment" -->
 				</textarea>
-			</section>
-		</section>
-		<section>
-			<section data-markdown>
+            </section>
+        </section>
+        <section>
+            <section data-markdown>
 				<textarea data-template>
 					## Le patron Adapter
 
 					> Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## A quoi sert un adaptateur ?
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## Dans la vie ?
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## Association d'objet non interoperable
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## T'es bien gentil JM mais dans le monde logiciel ?
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## Conceptuellement
 
@@ -113,44 +119,44 @@
 					Typiquement vous savez que c'est plus simple de l'utiliser mais vous n'y arriver pas.
 					Pourquoi ? Tout simplement car elle ne vous propose pas la bonne interface.
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## T'es bien gentil JM mais concrêtement en code ?
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					Exemple de code avec création d'un adapter et utilisation d'un adapter
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## Oui mais ça c'est un cas qu'on ne voit qu'à l'école...
 				</textarea>
-			</section>
-			<section data-markdown>
+            </section>
+            <section data-markdown>
 				<textarea data-template>
 					## Coding Live sur le monolith
 				</textarea>
-			</section>
-		</section>
-		<section data-markdown>
+            </section>
+        </section>
+        <section data-markdown>
 			<textarea data-template>
 				## Le patron Decorator
 
 				> Decorator is a structural design pattern that lets you attach new behaviors
 				> to objects by placing these objects inside special wrapper objects that contain the behaviors.
 			</textarea>
-		</section>
-		<section data-markdown>
+        </section>
+        <section data-markdown>
 			<textarea data-template>
 				## Une petite conclusion ...
 
 				Bla bla bla ...
 			</textarea>
-		</section>
-		<section data-markdown>
+        </section>
+        <section data-markdown>
 			<textarea data-template>
 				## Prochain sujet
 
@@ -158,24 +164,24 @@
 				- Factory et Builder
 				- Autre ?
 			</textarea>
-		</section>
-	</div>
+        </section>
+    </div>
 </div>
 
 <script src="js/reveal.js"></script>
 
 <script>
-	// More info about config & dependencies:
-	// - https://github.com/hakimel/reveal.js#configuration
-	// - https://github.com/hakimel/reveal.js#dependencies
-	Reveal.initialize({
-		dependencies: [
-			{src: 'plugin/markdown/marked.js'},
-			{src: 'plugin/markdown/markdown.js'},
-			{src: 'plugin/notes/notes.js', async: true},
-			{src: 'plugin/highlight/highlight.js', async: true}
-		]
-	});
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {src: 'plugin/highlight/highlight.js', async: true}
+        ]
+    });
 </script>
 </body>
 </html>
